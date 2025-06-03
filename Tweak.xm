@@ -133,7 +133,7 @@ inline BOOL flexAlreadyLoaded() {
     BOOL needsGesture = ![windowsWithGestures containsObject:self];
     BOOL isFLEXWindow = [self isKindOfClass:FLXWindowClass()];
     BOOL isStatusBar  = [self isKindOfClass:[UIStatusBarWindow class]];
-    if (needsGesture && !isFLEXWindow && !isStatusBar) {
+    /* if (needsGesture && !isFLEXWindow && !isStatusBar) {
         [windowsWithGestures addObject:self];
 
         // Add 3-finger long-press gesture for apps without a status bar
@@ -142,7 +142,7 @@ inline BOOL flexAlreadyLoaded() {
         tap.numberOfTouchesRequired = 3;
 
         [self addGestureRecognizer:tap];
-    }
+    } */
 }
 %end
 
