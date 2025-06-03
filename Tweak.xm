@@ -146,7 +146,7 @@ inline BOOL flexAlreadyLoaded() {
 }
 %end
 
-%hook UIStatusBarWindow
+/* %hook UIStatusBarWindow
 - (id)initWithFrame:(CGRect)frame {
     self = %orig;
     
@@ -157,7 +157,7 @@ inline BOOL flexAlreadyLoaded() {
     
     return self;
 }
-%end
+%end */
 
 %hook FLEXExplorerViewController
 - (BOOL)_canShowWhileLocked {
